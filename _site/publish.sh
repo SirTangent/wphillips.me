@@ -3,6 +3,10 @@ echo "compiling..."
 echo ""
 rm -r _site
 jekyll build
+
+# Add any other files that should be published within the root of site.
+cp keybase.txt _site/
+
 echo ""
 commit=$(date '+%d/%m/%Y %H:%M:%S');
 echo "preparing git commit \"$commit\"..."
