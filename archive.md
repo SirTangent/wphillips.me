@@ -3,36 +3,24 @@ layout: page
 title: Archive
 ---
 
-<section>
-  {% if site.posts[0] %}
-
-    {% capture currentyear %}{{ 'now' | date: "%Y" }}{% endcapture %}
-    {% capture firstpostyear %}{{ site.posts[0].date | date: '%Y' }}{% endcapture %}
-    {% if currentyear == firstpostyear %}
-        <h3>This year's posts</h3>
-    {% else %}  
-        <h3>{{ firstpostyear }}</h3>
-    {% endif %}
-
-    {%for post in site.posts %}
-      {% unless post.next %}
-        <ul>
-      {% else %}
-        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-        {% if year != nyear %}
-          </ul>
-          <h3>{{ post.date | date: '%Y' }}</h3>
-          <ul>
-        {% endif %}
-      {% endunless %}
-        <li><time>{{ post.date | date:"%d %b" }} - </time>
+<div id="archives">
+{% for category in site.categories %}
+  <div class="archive-group">
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <div id="#{{ category_name | slugize }}"></div>
+    <p></p>
+    
+    <h3 class="category-head">{{ category_name }}</h3>
+    <a name="{{ category_name | slugize }}"></a>
+    {% for post in site.categories[category_name] %}
+    <article class="archive-item">
+        <ul><li><time>{{ post.date | date:"%d %b %Y" }} - </time>
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
             {{ post.title }}
           </a>
-        </li>
+        </li></ul>
+    </article>
     {% endfor %}
-    </ul>
-
-  {% endif %}
-</section>
+  </div>
+{% endfor %}
+</div>

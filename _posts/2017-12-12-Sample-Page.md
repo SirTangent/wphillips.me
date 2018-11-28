@@ -1,5 +1,6 @@
 ---
 title: Sample Page
+categories: Misc.
 published: true
 ---
 

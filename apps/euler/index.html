@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Euler's Method</title>
+  <style>
+    body {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+    }
+    .main-container {
+      max-width: 600px;
+      display: inline-grid;
+      grid-gap: 20px;
+    }
+    .main-header {
+      background-color: tomato;
+      padding: 4px 16px;
+    }
+    h1 {
+      background-color: white;
+      display: inline-block;
+      padding: 4px 6px;
+      border: 2px solid black;
+
+    }
+    .box {
+      display: inline-block;
+      border: 2px solid black;
+      border-radius: 12px;
+    }
+    .main-form {
+      background-color: tomato;
+      max-width: 600px;
+      padding: 12px 16px;
+    }
+    .output {
+      grid-row: 2 2;
+      grid-column: 2 2;
+      background-color: greenyellow;
+      max-width: 600px;
+      padding: 12px 16px;
+    }
+    input {
+      outline: 2px solid black;
+    }
+  </style>
+  <script type="text/javascript" src="math.min.js"></script>
+  <script type="text/javascript" src="euler.js"></script>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="main-header box">
+      <h1>Solve using Euler's Method.</h1>
+      <p>This app takes a first order differential equation with an initial value and approximates a solution based on step size (h)</p>
+    </div>
+    <div class="main-form box">
+      <form>
+        <p class="form-desc">Differential Equation (dy/dx):</p>
+        <input type="text" name="equation" id="equation" value="x+y">
+        <p class="form-desc">x<sub>0</sub>:</p>
+        <input type="number" name="init_x" id="init_x" value="0">
+        <p class="form-desc">y<sub>0</sub>:</p>
+        <input type="number" name="init_y" id="init_y" value="1">
+        <p class="form-desc">Final x:</p>
+        <input type="number" name="final_x" id="final_x" value="0.5">
+        <p class="form-desc">Steps (Higher Number -> Percise Solution):</p>
+        <input type="number" name="steps" id="steps" value="5">
+        <input type="button" style="margin-left: 10px;" value="Calculate" onclick="solveEuler(equation.value, parseFloat(init_x.value), parseFloat(init_y.value), parseFloat(final_x.value), parseFloat(math.round(steps.value)))">
+      </form>
+    </div>
+    <div class="output box">
+      <p>Final y :</p>
+      <input type="number" name="solution" id="solution" value="">
+    </div>
+  </div>
+  <p class="footer"><i>Created by Wyatt Phillips (phillipsw1@wit.edu)</i></p>
+</body>
+</html>
