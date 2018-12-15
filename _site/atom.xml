@@ -4,12 +4,22 @@
  <title>Wyatt Phillips</title>
  <link href="/atom.xml" rel="self"/>
  <id>/</id>
- <updated>2018-11-28T16:02:54-05:00</updated>
+ <updated>2018-12-14T22:29:21-05:00</updated>
  <author>
    <name>Wyatt Phillips</name>
    <uri>https://wphillips.me/</uri>
    <email>phillipsw1@wit.edu</email>
  </author>
+
+ 
+
+ <entry>
+   <title>Cryptobuddy (HackWITus 2018)</title>
+   <link href="/CryptoBuddy"/>
+   <id>/CryptoBuddy</id>
+   <updated>2018-12-14T00:00:00-05:00</updated>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;img/cryptobuddy/cryptobuddy_final.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt; &lt;p&gt;&lt;em&gt;Final Product: Front View&lt;/em&gt;&lt;/p&gt; &lt;p&gt;&lt;br /&gt;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;We believe in the idea that privacy is always possible. Of course, there is always the risk with putting trust in your favorite messaging apps. As technology becomes more convenient for the user, more vulnerabilities start to reveal themselves with...</content>
+ </entry>
 
  
 
