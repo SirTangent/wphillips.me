@@ -2,7 +2,7 @@
 echo "compiling..."
 echo ""
 rm -r _site
-jekyll build
+JEKYLL_ENV=production jekyll build
 echo ""
 commit=$(date '+%d/%m/%Y %H:%M:%S');
 echo "preparing git commit \"$commit\"..."
