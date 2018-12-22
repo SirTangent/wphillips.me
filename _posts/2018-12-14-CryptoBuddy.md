@@ -31,7 +31,7 @@ It is called a "Sandbox Device" because it can only communicate with the message
 
 <br>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Q2gEpkZznZ8" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/Q2gEpkZznZ8" class="video" width="560" height="315" frameborder="0" allowfullscreen></iframe>
 
 *CryptoBuddy Practice Pitch*
 
@@ -103,7 +103,7 @@ Meanwhile, we were live-streaming our process on YouTube. Well, mostly just Wyat
 
 <br>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cE7koQihrbs" frameborder="0" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/cE7koQihrbs" frameborder="0" allowfullscreen></iframe>
 
 *Official Livestream.*
 
