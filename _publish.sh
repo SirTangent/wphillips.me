@@ -4,7 +4,8 @@ echo ""
 rm -r _site
 JEKYLL_ENV=production jekyll build
 echo ""
-commit=$(date '+%d/%m/%Y %H:%M:%S');
+echo -n "Name commit: "
+read commit
 echo "preparing git commit \"$commit\"..."
 git add .
 git commit -m "$commit"

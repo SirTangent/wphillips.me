@@ -12,3 +12,5 @@ I'm an undergraduate engineering student currently enrolled at **Wentworth Insti
 * E-mail: `phillipsw1@wit.edu`
 
 * Phone: `(781) 820-0808`
+
+* [Resume](PhillipsWyatt-Resume.pdf)
