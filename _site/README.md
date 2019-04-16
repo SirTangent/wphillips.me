@@ -1,2 +1,0 @@
-# wphillips.me
-Personal Website
